@@ -24,7 +24,6 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-app.MapRazorPages();
 app.UseAntiforgery(); //blazor
 // MVC routing
 app.MapControllerRoute(
