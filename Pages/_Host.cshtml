@@ -1,0 +1,25 @@
+﻿@page "/panel/{*catchall}"
+@using SNBLAZOR.Components
+@using Microsoft.AspNetCore.Components.Web
+@* @using static Microsoft.AspNetCore.Components.Web.RenderModes
+ *@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <base href="/" />
+    <title>Blazor</title>
+</head>
+<body>
+    <app>
+        <component type="typeof(App)" render-mode="ServerPrerendered" />
+
+    </app>
+</body>
+</html>
