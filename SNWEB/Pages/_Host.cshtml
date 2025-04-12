@@ -18,7 +18,10 @@
 </head>
 <body>
     <app>
-        <component type="typeof(App)" render-mode="ServerPrerendered" />
+        @*   <component type="typeof(App)" render-mode="ServerPrerendered" />  uruchamia sie blazor jednak nie ładuje sie blazor.web.js przez co aplikacja tylko statyczna - nie działa SingnalR*@ 
+    <component type="typeof(App)" render-mode="InteractiveServer" /> 
+
+
 
     </app>
 </body>
